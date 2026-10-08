@@ -6,6 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,9 +33,103 @@
 
     <section class="content">
         <h2 id="introduksjon">Introduksjon</h2>
+        <p>Denne nettsiden skal presentere om tallsystemer og hardware-komponenten RAM. Samtidig skal den vise vår kompetanse ovenfor det å bruke HTML og CSS sammen.</p>
     </section>
     <section class="content">
         <h2 id="tallsystemer">Tallsystemer</h2>
+        <h3>Hva er et tallsystem?</h3>
+        <p>Det er allmennkunnskap at vi bruker ti sifre for å telle. Men hvordan funker det egentlig? Og finnes det andre tallsystemer?</p>
+        <p>Vi bruker base-10. Det vil si at vi teller med første sifferet fra 0 til 9, før neste siffer går opp med 1.</p>
+        <h3>Den generelle regelen</h3>
+        <p>Alle tallsystemer bruker posisjonssystemet. For å finne verdien av hvilket som helst tall fra andre tallsystemer, kan man bruke denne tabellen:</p>
+
+        <table>
+            <tr>
+                <td>...</td>
+                <td>4</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>Posisjon</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>x<sup>3</sup></td>
+                <td>x<sup>2</sup></td>
+                <td>x<sup>1</sup></td>
+                <td>x<sup>0</sup></td>
+                <td>Verdi</td>
+            </tr>
+        </table>
+
+        <p class="center">(der <i>x</i> er grunntallet / basen)</p>
+        <br>
+        <p>Hvis man legger opp verdiene fra nederste rad, får man verdien i sitt eget tallsystem.</p>
+        <p>Fra nå av kan vi kalle tall fra x-tallssystemet til base-x, eller så kan vi si tall<sub>x</sub></p>
+        <hr>
+        <p>Ett eksempel er å gjøre om 1523 i base-8 til et tall i base-10.</p>
+        <br>
+        <p class="center">Verdien til hver posisjon i base-8 er:</p>
+
+        <table>
+            <tr>
+                <td></td>
+                <td>8<sup>3</sup></td>
+                <td>8<sup>2</sup></td>
+                <td>8<sup>1</sup></td>
+                <td>8<sup>0</sup></td>
+            </tr>
+            <tr>
+                <td>=</td>
+                <td>512</td>
+                <td>64</td>
+                <td>8</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+        <p class="center">Hvis vi ganger hvert siffer fra 1523<sub>8</sub> med hvert tall, henholdsvis:</p>
+
+        <table>
+            <tr>
+                <td>512*1</td>
+                <td>64*5</td>
+                <td>8*2</td>
+                <td>1*3</td>
+            </tr>
+        </table>
+
+        <p class="center">Får vi:</p>
+
+        <table>
+            <tr>
+                <td>512</td>
+                <td>320</td>
+                <td>16</td>
+                <td>3</td>
+            </tr>
+        </table>
+        
+        <p class="center">Lagt sammen blir 851 i base-10.</p>
+
+        <hr>
+
+        <p>Hvis vi vil gjøre om et tall fra base-10 til base-8, må vi bruke en annen metode, fordi vi ikke greier å regne i base-8.</p>
+        <p>Vi må først starte med et siffer intuitivt til venstre, avhengig av hvor stort tallet er. Vi kan begynne med det fjerde sifferet. Husk at man må opphøye grunntallet med (1-siffertall):</p>
+
+        <ol>
+            <li>8^3=512>342 , så det finnes ingen tall som ligger i fjerde siffer.</li>
+            <li>64 < 342 , så det finnes tall som ligger i tredje siffer. Vi trenger ikke sjekke mer av dette.</li>
+            <li>342/62 = 5.34 ; Tredje siffer er lik 5.</li>
+            <li>342-5\*8<sup>2</sup> = 22</li>
+            <li>22/16 = 2.75 ; Andre siffer er lik 2.</li>
+            <li>22-2\*8<sup>1</sup> = 6</li>
+            <li>6/1 = 6 ; Første siffer er lik 6.</li>
+        </ol>
+
+        <p>Tallet blir da 526<sub>8</sub></p>
+
+        
     </section>
     <section class="content">
         <h2 id="ram">RAM</h2>

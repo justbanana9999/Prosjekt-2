@@ -1,0 +1,1 @@
+Denne nettsiden skal presentere om tallsystemer og hardware-komponenten RAM. Samtidig skal den vise vår kompetanse ovenfor det å bruke HTML og CSS sammen.
