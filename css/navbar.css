@@ -1,0 +1,40 @@
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #4C4541;
+    width: 100%;
+    z-index: 1000;
+    /* box-sizing: border-box; */
+}
+
+nav a{
+    text-decoration: none;
+    padding: 1.5rem;
+    color: white;
+    font-size: 20px;
+
+    text-align: center;
+
+    /* Gjør at containeren kan vokse for å fylle plass */
+    flex-grow: 1;
+    /* Gjør at alle 'containerene' har samme størrelse i utgangspunktet */
+    flex-basis: 0%;
+
+    /* border: 2px solid black; */
+}
+
+.topnav {
+    margin: 0 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    /* border: 2px solid black; */
+}
+
+.topnav a:hover {
+    background-color: #AEAC78;
+}
+
+/* * {
+    border: 1px solid black;
+} */

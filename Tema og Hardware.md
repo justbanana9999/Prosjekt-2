@@ -1,0 +1,4 @@
+
+| Tema         | Hardware |
+| ------------ | -------- |
+| Tallsystemer | RAM      |
