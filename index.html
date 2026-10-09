@@ -11,6 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -36,155 +44,142 @@
 
     <section class="text">
         <section class="content">
-            <h2 id="introduksjon">Introduksjon</h2>
-            <p>Denne nettsiden skal presentere om tallsystemer og hardware-komponenten RAM. Samtidig skal den vise vår kompetanse ovenfor det å bruke HTML og CSS sammen.</p>
+            <section class="bounds">
+                <h2 id="introduksjon">Introduksjon</h2>
+                <p>Denne nettsiden skal presentere om tallsystemer og hardware-komponenten RAM. Samtidig skal den vise vår kompetanse ovenfor det å bruke HTML og CSS sammen.</p>
+            </section>
         </section>
+
         <section class="content">
-            <h2 id="tallsystemer">Tallsystemer</h2>
-            <h3>Hva er et tallsystem?</h3>
-            <p>Det er allmennkunnskap at vi bruker ti sifre for å telle. Men hvordan funker det egentlig? Og finnes det andre tallsystemer?</p>
-            <p>Vi bruker base-10. Det vil si at vi teller med første sifferet fra 0 til 9, før neste siffer går opp med 1.</p>
-            <h3>Den generelle regelen</h3>
-            <p>Alle tallsystemer bruker posisjonssystemet. For å finne verdien av hvilket som helst tall fra andre tallsystemer, kan man bruke denne tabellen:</p>
+            <section class="bounds">
+                <h2 id="tallsystemer">Tallsystemer</h2>
+                <h3>Hva er et tallsystem?</h3>
+                <p>Det er allmennkunnskap at vi bruker ti sifre for å telle. Men hvordan funker det egentlig? Og finnes det andre tallsystemer?</p>
+                <p>Vi bruker <span class="blue">base-10</span>. Det vil si at vi teller med første sifferet fra <span class="math">0</span> til <span class="math">9</span>, før neste siffer går opp med 1.</p>
+                <h3>Hvordan finner vi verdien?</h3>
+                <p>Alle tallsystemer bruker posisjonssystemet. For å finne verdien av hvilket som helst tall fra andre tallsystemer, kan man bruke denne tabellen:</p>
+    
+                <table>
+                    <tr>
+                        <td>...</td>
+                        <td><span class="math">4</span></td>
+                        <td><span class="math">3</span></td>
+                        <td><span class="math">2</span></td>
+                        <td><span class="math">1</span></td>
+                        <td>Posisjon</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td><span class="math">x^3</span></td>
+                        <td><span class="math">x^2</span></td>
+                        <td><span class="math">x^1</span></td>
+                        <td><span class="math">x^0</span></td>
+                        <td>Verdi</td>
+                    </tr>
+                </table>
+    
+                <p class="center">(der <span class="math">x</span> er grunntallet / basen)</p>
+                <br>
+                <p>Hvis man legger opp verdiene fra nederste rad, får man verdien i sitt eget tallsystem.</p>
+                <p>Herunder kan vi kalle tall fra x-tallssystemet til base-x, eller så kan vi si tall<sub>x</sub> .</p>
 
-            <table>
-                <tr>
-                    <td>...</td>
-                    <td>4</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>Posisjon</td>
-                </tr>
-                <tr>
-                    <td>...</td>
-                    <td>x<sup>3</sup></td>
-                    <td>x<sup>2</sup></td>
-                    <td>x<sup>1</sup></td>
-                    <td>x<sup>0</sup></td>
-                    <td>Verdi</td>
-                </tr>
-            </table>
+                <hr>
+                
+                <p>Ett eksempel er å gjøre om <span class="math">1523</span> i <span class="blue"><span class="blue">base-8</span></span> til et tall i <span class="blue">base-10</span>.</p>
+                <br>
+                <p class="center">Verdien til hver posisjon i base-8 er:</p>
+    
+                <table>
+                    <tr>
+                        <td></td>
+                        <td><span class="math">8^3</span></td>
+                        <td><span class="math">8^2</span></td>
+                        <td><span class="math">8^1</span></td>
+                        <td><span class="math">8^0</span></td>
+                    </tr>
+                    <tr>
+                        <td>=</td>
+                        <td><span class="math">512</span></td>
+                        <td><span class="math">64</span></td>
+                        <td><span class="math">8</span></td>
+                        <td><span class="math">1</span></td>
+                    </tr>
+                </table>
+    
+                <p class="center">Hvis vi ganger hvert siffer fra <span class="math">1523<sub>8</sub></span> med hvert tall, henholdsvis:</p>
+    
+                <table>
+                    <tr>
+                        <td><span class="math">512&middot;1</span></td>
+                        <td><span class="math">64&middot;5</span></td>
+                        <td><span class="math">8&middot;2</span></td>
+                        <td><span class="math">1&middot;3</span></td>
+                    </tr>
+                </table>
+    
+                <p class="center">Får vi:</p>
+    
+                <table>
+                    <tr>
+                        <td><span class="math">512</span></td>
+                        <td><span class="math">320</span></td>
+                        <td><span class="math">16</span></td>
+                        <td><span class="math">3</span></td>
+                    </tr>
+                </table>
+                
+                <p class="center">Lagt sammen blir <span class="math">851</span> i <span class="blue">base-10</span>.</p>
+    
+                <hr>
+    
+                <p>Hvis vi vil gjøre om et tall fra <span class="blue">base-10</span> til <span class="blue">base-8</span>, må vi bruke en annen metode, fordi vi ikke greier å regne i <span class="blue">base-8</span>.</p>
+                <p>Vi må først starte med et siffer intuitivt til venstre, avhengig av hvor stort tallet er. Vi kan begynne med det fjerde sifferet. Husk at man må opphøye grunntallet med (1 minus siffertall):</p>
+    
+                <ol>
+                    <li><span class="math">8^3 = 512 > 342</span> , så det finnes ingen tall som ligger i fjerde siffer.</li>
+                    <li><span class="math">64 < 342</span> , så det finnes tall som ligger i tredje siffer.</li>
+                    <li><span class="math">342/62 = 5.34</span> ; Tredje siffer er lik <span class="math">5</span>.</li>
+                    <li><span class="math">342 - 5&middot;8^2 = 22</span></li>
+                    <li><span class="math">22/16 = 2.75</span> ; Andre siffer er lik <span class="math">2</span>.</li>
+                    <li><span class="math">22 - 2&middot;8^1 = 6</span></li>
+                    <li><span class="math">6/1 = 6</span> ; Første siffer er lik <span class="math">6</span>.</li>
+                </ol>
+    
+                <p>Tallet blir da <span class="math">526<sub>8</sub></span></p>
 
-            <p class="center">(der <i>x</i> er grunntallet / basen)</p>
-            <br>
-            <p>Hvis man legger opp verdiene fra nederste rad, får man verdien i sitt eget tallsystem.</p>
-            <p>Fra nå av kan vi kalle tall fra x-tallssystemet til base-x, eller så kan vi si tall<sub>x</sub></p>
-            <hr>
-            <p>Ett eksempel er å gjøre om 1523 i base-8 til et tall i base-10.</p>
-            <br>
-            <p class="center">Verdien til hver posisjon i base-8 er:</p>
+                <hr>
 
-            <table>
-                <tr>
-                    <td></td>
-                    <td>8<sup>3</sup></td>
-                    <td>8<sup>2</sup></td>
-                    <td>8<sup>1</sup></td>
-                    <td>8<sup>0</sup></td>
-                </tr>
-                <tr>
-                    <td>=</td>
-                    <td>512</td>
-                    <td>64</td>
-                    <td>8</td>
-                    <td>1</td>
-                </tr>
-            </table>
-
-            <p class="center">Hvis vi ganger hvert siffer fra 1523<sub>8</sub> med hvert tall, henholdsvis:</p>
-
-            <table>
-                <tr>
-                    <td>512*1</td>
-                    <td>64*5</td>
-                    <td>8*2</td>
-                    <td>1*3</td>
-                </tr>
-            </table>
-
-            <p class="center">Får vi:</p>
-
-            <table>
-                <tr>
-                    <td>512</td>
-                    <td>320</td>
-                    <td>16</td>
-                    <td>3</td>
-                </tr>
-            </table>
-            
-            <p class="center">Lagt sammen blir 851 i base-10.</p>
-
-            <hr>
-
-            <p>Hvis vi vil gjøre om et tall fra base-10 til base-8, må vi bruke en annen metode, fordi vi ikke greier å regne i base-8.</p>
-            <p>Vi må først starte med et siffer intuitivt til venstre, avhengig av hvor stort tallet er. Vi kan begynne med det fjerde sifferet. Husk at man må opphøye grunntallet med (1-siffertall):</p>
-
-            <ol>
-                <li>8^3=512>342 , så det finnes ingen tall som ligger i fjerde siffer.</li>
-                <li>64 < 342 , så det finnes tall som ligger i tredje siffer. Vi trenger ikke sjekke mer av dette.</li>
-                <li>342/62 = 5.34 ; Tredje siffer er lik 5.</li>
-                <li>342-5\*8<sup>2</sup> = 22</li>
-                <li>22/16 = 2.75 ; Andre siffer er lik 2.</li>
-                <li>22-2\*8<sup>1</sup> = 6</li>
-                <li>6/1 = 6 ; Første siffer er lik 6.</li>
-            </ol>
-
-            <p>Tallet blir da 526<sub>8</sub></p>
-
-            
+                <p>Samme tall i en mindre base vil alltid være mindre enn samme tallet i en høyere base.</p>
+                
+            </section>
         </section>
-    <section class="content">
-        <h2 id="ram">RAM</h2>
-        <table>
-            <tr>
-                <td rowspan="3">Day</td>
-                <td colspan="3">Seminar</td>
-            </tr>
-            <tr>
-                <td colspan="2">Schedule</td>
-                <td rowspan="2">Topic</td>
-            </tr>
-            <tr>
-                <td>Begin</td>
-                <td>End</td>
-            </tr>
-            <tr>
-                <td rowspan="2">Monday</td>
-                <td rowspan="2">8:00 a.m.</td>
-                <td rowspan="2">5:00 p.m.</td>
-                <td>Introduction to XML</td>
-            </tr>
-            <tr>
-                <td>Validity: DTD and Relax NG</td>
-            </tr>
-            <tr>
-                <td rowspan="4">Tuesday</td>
-                <td>8:00 a.m.</td>
-                <td>11:00 a.m.</td>
-                <td rowspan="2">XPath</td>
-            </tr>
-            <tr>
-                <td rowspan="2">11:00 a.m.</td>
-                <td rowspan="2">2:00 p.m.</td>
-            </tr>
-            <tr>
-                <td rowspan="2"> XSL Transformations</td>
-            </tr>
-                <td>2:00 p.m.</td>
-                <td>5:00 p.m.</td>
-            <tr>
-                <td>Wednesday</td>
-                <td>8:00 a.m.</td>
-                <td>12:00 p.m.</td>
-                <td> XSL Formatting Objects</td>
-            </tr>
-        </table>
-    </section>
-    <section class="content">
-        <h2 id="kildeliste">Kildeliste</h2>
-    </section>
+        
+        <section class="content">
+            <section class="bounds">
+                <h2 id="ram">RAM</h2>
+                <section style="display: flex; justify-content: space-between;">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius et ea omnis doloremque itaque, sequi recusandae consequatur consectetur deserunt provident magnam dicta voluptatem officia molestiae obcaecati voluptatibus ab. Temporibus blanditiis repellat veritatis rerum dolor libero? Saepe, aliquam nobis eum perferendis maxime velit omnis fugiat nam. Tempore temporibus quis sed quas?</p>
+                    <img src="src/Ram.jpg" alt="Multiple gaming ram-sticks laid out on a table">
+                </section>
+            </section>
+        </section>
+
+        <section class="content">
+            <section class="bounds">
+                <h2 id="kildeliste">Kildeliste</h2>
+                <h3>Bilder</h3>
+                <ul>
+                    <li>Photo by Andrey Matveev from Pexels:
+                        <a href="https://www.pexels.com/photo/high-performance-ram-modules-on-wooden-surface-34006659/">https://www.pexels.com/photo/high-performance-ram-modules-on-wooden-surface-34006659/</a>
+                    </li>
+                </ul>
+                <h3>Kilder</h3>
+                <ul>
+                    
+                </ul>
+            </section>
+        </section>
+
     </section>
 </body>
 </html>

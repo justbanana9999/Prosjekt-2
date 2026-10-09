@@ -4,46 +4,46 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 70px;
 
-    font-family: "Google Sans", sans-serif;
+    font-family: 'Google Sans', sans-serif;
 }
 
 h2 {
     font-size: xx-large;
+    font-size: 3rem;
+    text-align: center;
 }
 
 h3 {
-    font-size: x-large;
-    padding-left: 1rem;
+    font-size: xx-large;
+    /* padding-left: 1rem; */
+    text-align: center;
 }
 
 p {
-    font-size: large;
+    font-size: x-large;
     font-weight: 600;
     padding-left: 2rem;
 }
 
 li {
-    font-size: large;
+    font-size: x-large;
     font-weight: 600;
     padding-left: 1rem;
     padding-top: 0.5rem;
     /* padding-bottom: 1rem; */
 }
 
-li:first-child {
-    padding-top: 1rem;
+.group {
+    border: 2px solid #2e2b29;
 }
 
-li:last-child {
-    padding-bottom: 1rem;
+hr {
+    border: 1px solid #2e2b29;
+    margin: 40px 1rem;
 }
-
-/* * {
-    border: 1px solid black;
-} */
 
 .content {
-    padding: 2rem 4rem;
+    padding: 4rem 4rem;
     background-color: #FCF0DA;
     color: #2e2b29;
 }
@@ -54,11 +54,21 @@ li:last-child {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
 }
 
-.content:nth-child(even) td{
+a {
+    /* text-decoration: none; */
+    color: #FCF0DA;
+}
+
+.content:nth-child(even) td, .group, hr {
     border-color: #FCF0DA;
 }
 
-.content p:last-child {
+.content:nth-child(even) hr {
+    color: #2e2b29;
+}
+
+/* [ .content > p ] - direkte barn med p-tag under .content */
+.bounds > p:last-child {
     padding-bottom: 20px;
 }
 
@@ -80,15 +90,59 @@ li:last-child {
     font-weight: 600;
 }
 
-.center {
-    text-align: center;
+
+.content:last-child .bounds {
+    margin-bottom: 4rem;
 }
 
-hr {
-    border: 1px solid #2e2b29;
-    margin: 40px 1rem;
+
+.center {
+    text-align: center;
 }
 
 html {
     scroll-padding-top: 130px;
 }
+
+table {
+    /* box-shadow: 0px 0px 30px rgba(105, 90, 71, 0.4); */
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.2);
+}
+
+.content:nth-child(even) table {
+    /* box-shadow: 0px 0px 50px rgba(255, 219, 178, 0.2); */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+.math {
+    color: rgb(193, 76, 76);
+    font-family: 'Jetbrains mono';
+}
+
+.blue {
+    color: rgb(76, 125, 193);
+}
+
+.bounds {
+    padding: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+img {
+    border-radius: 20px;
+    width: 400px;
+    /* For at alt-tekst skal se fint ut */
+    font-family: 'Google Sans';
+    /* Dette funker for å sentrere bildet */
+    margin-left: 4rem;
+    /* margin-right: auto; */
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); */
+}
+
+/* * {
+    border: 1px solid black;
+} */

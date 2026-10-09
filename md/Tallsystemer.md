@@ -3,7 +3,7 @@ Det er allmennkunnskap at vi bruker ti sifre for å telle. Men hvordan funker de
 
 Vi bruker base-10. Det vil si at vi teller med første sifferet fra 0 til 9, før neste siffer går opp med 1.
 
-### Den generelle regelen
+### Hvordan finner vi verdien?
 
 Alle tallsystemer bruker posisjonssystemet.
 
@@ -16,7 +16,7 @@ For å finne verdien av hvilket som helst tall fra andre tallsystemer, kan man b
 
 Hvis man legger opp verdiene fra nederste rad, får man verdien i sitt eget tallsystem.
 
-Fra nå av kan vi kalle tall fra x-tallssystemet til base-x, eller så kan vi si tall_x
+Herunder kan vi kalle tall fra x-tallssystemet til base-x, eller så kan vi si tall_x
 
 ***
 
@@ -41,14 +41,14 @@ Lagt sammen blir 851 i base-10.
 
 Hvis vi vil gjøre om et tall fra base-10 til base-8 (som for eksempel 342), må vi bruke en annen metode, fordi vi ikke greier å regne i base-8.
 
-Vi må først starte med et siffer intuitivt til venstre, avhengig av hvor stort tallet er. Vi kan begynne med det fjerde sifferet. Husk at man må opphøye grunntallet med (1-siffertall):
+Vi må først starte med et siffer intuitivt til venstre, avhengig av hvor stort tallet er. Vi kan begynne med det fjerde sifferet. Husk at man må opphøye grunntallet med (1 minus siffertall):
 
-1. 8^3=512>342 , så det finnes ingen tall som ligger i fjerde siffer.
+1. 8^3 = 512 > 342 , så det finnes ingen tall som ligger i fjerde siffer.
 2. 64 < 342 , så det finnes tall som ligger i tredje siffer. Vi trenger ikke sjekke mer av dette.
 3. 342/62 = 5.34 ; Tredje siffer er lik 5.
-4. 342-5\*8² = 22
+4. 342 - 5\*8² = 22
 5. 22/16 = 2.75 ; Andre siffer er lik 2.
-6. 22-2\*8 = 6
+6. 22 - 2\*8 = 6
 7. 6/1 = 6 ; Første siffer er lik 6.
 
 Tallet blir da 526_8.
