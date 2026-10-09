@@ -7,11 +7,6 @@ body {
     font-family: "Google Sans", sans-serif;
 }
 
-.content {
-    padding: 2rem 4rem;
-    color: #2e2b29;
-}
-
 h2 {
     font-size: xx-large;
 }
@@ -47,30 +42,38 @@ li:last-child {
     border: 1px solid black;
 } */
 
+.content {
+    padding: 2rem 4rem;
+    background-color: #FCF0DA;
+    color: #2e2b29;
+}
+
 .content:nth-child(even) {
     background-color: #2e2b29;
     color: #FCF0DA;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
 }
 
+.content:nth-child(even) td{
+    border-color: #FCF0DA;
+}
+
 .content p:last-child {
     padding-bottom: 20px;
 }
 
-table {
-    /* display: flex; */
-    /* max-width: 400px; */
+.content table {
     margin: 40px auto;
 
     border-collapse: collapse;
-    /* align-items: flex-end; */
 }
 
-td {
+.content td {
     padding: 0.5rem;
     text-align: center;
     box-sizing: border-box;
-    width: 75px;
+    /* width: 75px; */
+    height: 3rem;
     /* flex-grow: 1;
     flex-basis: 0%; */
     border: 2px solid #2e2b29;
@@ -87,5 +90,5 @@ hr {
 }
 
 html {
-    scroll-padding-top: 110px;
+    scroll-padding-top: 130px;
 }
