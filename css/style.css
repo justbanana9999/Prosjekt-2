@@ -132,6 +132,7 @@ table {
 img {
     border-radius: 20px;
     width: 400px;
+    height: fit-content;
     /* For at alt-tekst skal se fint ut */
     font-family: 'Google Sans';
     /* Dette funker for å sentrere bildet */
@@ -146,3 +147,15 @@ img {
 /* * {
     border: 1px solid black;
 } */
+
+/*
+Source - https://stackoverflow.com/a/17828274
+Posted by Real Dreams, modified by community. See post 'Timeline' for change history
+Retrieved 2026-10-11, License - CC BY-SA 4.0
+*/
+
+ul { list-style-type: square; }
+
+/* ul { list-style-type: "> "; } */
+
+ol { list-style-type: upper-roman; }
