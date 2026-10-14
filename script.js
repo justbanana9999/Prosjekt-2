@@ -7,6 +7,9 @@ navItems.forEach(item => {
         const itemLeft = item.offsetLeft;
         const itemWidth = item.offsetWidth;
 
+        // --indicator-left og --indicator-width er variabler declared/erklært i style.css.
+        // left- og width-egenskapene er bundet til variablene, så hvis jeg oppdaterer de her, så oppdateres egenskapene i style.css. 
+
         navbar.style.setProperty('--indicator-left', `${itemLeft}px`)
         navbar.style.setProperty('--indicator-width', `${itemWidth}px`)
     });

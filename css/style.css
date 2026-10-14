@@ -59,6 +59,10 @@ a {
     color: #FCF0DA;
 }
 
+a:hover {
+    color: rgb(193, 76, 76);
+}
+
 .content:nth-child(even) td, .group, hr {
     border-color: #FCF0DA;
 }
@@ -68,7 +72,7 @@ a {
 }
 
 /* [ .content > p ] - direkte barn med p-tag under .content */
-.bounds > p:last-child {
+.wrapper > p:last-child {
     padding-bottom: 20px;
 }
 
@@ -91,7 +95,7 @@ a {
 }
 
 
-.content:last-child .bounds {
+.content:last-child .wrapper {
     margin-bottom: 4rem;
 }
 
@@ -123,10 +127,11 @@ table {
     color: rgb(76, 125, 193);
 }
 
-.bounds {
+.wrapper {
     padding: 0;
-    max-width: 1000px;
     margin: 0 auto;
+    /* min-width: 800px; */
+    max-width: 1000px;
 }
 
 img {
@@ -154,7 +159,9 @@ Posted by Real Dreams, modified by community. See post 'Timeline' for change his
 Retrieved 2026-10-11, License - CC BY-SA 4.0
 */
 
-ul { list-style-type: square; }
+ul { list-style-type: square }
+
+ul > li { margin: 2rem 0; }
 
 /* ul { list-style-type: "> "; } */
 

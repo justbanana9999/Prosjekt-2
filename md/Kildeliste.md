@@ -1,1 +1,2 @@
-- https://www.youtube.com/watch?v=lLPoX0nUmyc
+- https://www.pexels.com/photo/high-performance-ram-modules-on-wooden-surface-34006659/
+- https://www.howtogeek.com/697659/what-is-ram-everything-you-need-to-know/
