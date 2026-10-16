@@ -143,10 +143,10 @@ img {
     /* Dette funker for å sentrere bildet */
     margin-left: 4rem;
     /* margin-right: auto; */
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     display: flex;
-    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* * {

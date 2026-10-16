@@ -17,8 +17,32 @@ navItems.forEach(item => {
 
 navbar.addEventListener('mouseleave', () => {
     indicator.style.opacity = '0';
+    // indicator.style.setProperty('width','20vw')
 });
 
 navbar.addEventListener('mouseenter', () => {
     indicator.style.opacity = '1';
+    // indicator.style.setProperty('width','25vw')
 });
+
+navbar.addEventListener('click', () => {
+    // indicator.style.setProperty('margin','20px')
+    // indicator.style.setProperty('width','20vw')
+    // indicator.style.setProperty('height','90%')
+    // indicator.style.setProperty('flex-grow','10')
+    // indicator.style.setProperty('flex-shrink','2')
+    // indicator.style.setProperty('flex','2')
+})
+
+// const img = document.querySelectorAll('img')
+
+// try {
+// img.forEach(item => {
+//     item.addEventListener('mouseenter', () => {
+//         alert();
+//         item.style.setProperty('width','600px');
+//     })
+// })
+// } catch(e) {
+//     alert(e)
+// }
