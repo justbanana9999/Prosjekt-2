@@ -20,7 +20,7 @@ Herunder kan vi kalle tall fra x-tallssystemet til base-x, eller så kan vi si t
 
 ***
 
-Ett eksempel er å gjøre om 1523 i base-8 til et tall i base-10.
+Ett eksempel er å gjøre om 1523 i base-8 til et tall i base-10:
 
 Verdien til hver posisjon i base-8 er:
 
@@ -52,3 +52,45 @@ Vi må først starte med et siffer intuitivt til venstre, avhengig av hvor stort
 7. 6/1 = 6 ; Første siffer er lik 6.
 
 Tallet blir da 526_8.
+
+***
+
+Samme tall i en mindre base vil alltid være mindre enn samme tallet i en høyere base.
+
+***
+
+Det er veldig enkelt å gjøre om 16-bit-tall (hexadesimal) til binær, fordi 2 kan bli opphøyd i 4 for å gi 16.
+
+A78_16 = 1010 0111 1000_2
+
+Fordi:
+
+| base-16 | $0$ | $1$ | $2$  | $3$  | $4$   | $5$   | $6$   | $7$   |
+| ------- | --- | --- | ---- | ---- | ----- | ----- | ----- | ----- |
+| base-2  | $0$ | $1$ | $10$ | $11$ | $100$ | $101$ | $110$ | $111$ |
+
+| base-16 | $8$    | $9$    | $A$    | $B$    | $C$    | $D$    | $E$    | $F$    |
+| ------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| base-2  | $1000$ | $1001$ | $1010$ | $1011$ | $1100$ | $1101$ | $1110$ | $1111$ |
+
+Når man legger til et siffer hos tallet i base-16 på høyre side, vil man legge til 4 tall i tallet i base-2 på høyre side.
+
+Samme skjer med tall i base-4, fordi 4 kan bli opphøyd i 2 for å gi 16. Det betyr at når man legger til et siffer i base-16, legger man til 2 sifre i base-4.
+
+### Fargesystemer
+
+Mange programmer tar i bruk hexadesimal-tall for å representere farger. Dette er fordi skjermer pleier å ha 256 ulike lysstyrker på hver pixel (0-255), på hver fargekanal, og et tosifret hexadesimaltall kan gi tall mellom 0 og 255_10.
+
+Eksempel:
+
+88AABB:
+
+Rødt = 88_16 = 136_10
+Grønt = AA_16 = 170_10
+Blått = BB_16 = 187_10
+
+Fargen vil se slik ut:
+
+Begge sifrene i hvert kanal er like, kan man forkorte det slik:
+
+88AABB = 8AB

@@ -53,9 +53,11 @@
         <section class="content">
             <section class="wrapper">
                 <h2 id="tallsystemer">Tallsystemer</h2>
+
                 <h3>Hva er et tallsystem?</h3>
                 <p>Det er allmennkunnskap at vi bruker ti sifre for å telle. Men hvordan funker det egentlig? Og finnes det andre tallsystemer?</p>
                 <p>Vi bruker <span class="blue">base-10</span>. Det vil si at vi teller med første sifferet fra <span class="math">0</span> til <span class="math">9</span>, før neste siffer går opp med 1.</p>
+                
                 <h3>Hvordan finner vi verdien?</h3>
                 <p>Alle tallsystemer bruker posisjonssystemet. For å finne verdien av hvilket som helst tall fra andre tallsystemer, kan man bruke denne tabellen:</p>
     
@@ -85,71 +87,169 @@
 
                 <hr>
                 
-                <p>Ett eksempel er å gjøre om <span class="math">1523</span> i <span class="blue"><span class="blue">base-8</span></span> til et tall i <span class="blue">base-10</span>.</p>
-                <br>
-                <p class="center">Verdien til hver posisjon i base-8 er:</p>
-    
-                <table>
-                    <tr>
-                        <td></td>
-                        <td><span class="math">8^3</span></td>
-                        <td><span class="math">8^2</span></td>
-                        <td><span class="math">8^1</span></td>
-                        <td><span class="math">8^0</span></td>
-                    </tr>
-                    <tr>
-                        <td>=</td>
-                        <td><span class="math">512</span></td>
-                        <td><span class="math">64</span></td>
-                        <td><span class="math">8</span></td>
-                        <td><span class="math">1</span></td>
-                    </tr>
-                </table>
-    
-                <p class="center">Hvis vi ganger hvert siffer fra <span class="math">1523<sub>8</sub></span> med hvert tall, henholdsvis:</p>
-    
-                <table>
-                    <tr>
-                        <td><span class="math">512&middot;1</span></td>
-                        <td><span class="math">64&middot;5</span></td>
-                        <td><span class="math">8&middot;2</span></td>
-                        <td><span class="math">1&middot;3</span></td>
-                    </tr>
-                </table>
-    
-                <p class="center">Får vi:</p>
-    
-                <table>
-                    <tr>
-                        <td><span class="math">512</span></td>
-                        <td><span class="math">320</span></td>
-                        <td><span class="math">16</span></td>
-                        <td><span class="math">3</span></td>
-                    </tr>
-                </table>
-                
-                <p class="center">Lagt sammen blir <span class="math">851</span> i <span class="blue">base-10</span>.</p>
-    
-                <hr>
-    
+                <p>Ett eksempel er å gjøre om <span class="math">1523</span> i <span class="blue"><span class="blue">base-8</span></span> til et tall i <span class="blue">base-10</span>:</p>
+
+                <section class="example">
+                    <p class="center">Verdien til hver posisjon i base-8 er:</p>
+        
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><span class="math">8^3</span></td>
+                            <td><span class="math">8^2</span></td>
+                            <td><span class="math">8^1</span></td>
+                            <td><span class="math">8^0</span></td>
+                        </tr>
+                        <tr>
+                            <td>=</td>
+                            <td><span class="math">512</span></td>
+                            <td><span class="math">64</span></td>
+                            <td><span class="math">8</span></td>
+                            <td><span class="math">1</span></td>
+                        </tr>
+                    </table>
+        
+                    <p class="center">Hvis vi ganger hvert siffer fra <span class="math">1523<sub>8</sub></span> med hvert tall, henholdsvis:</p>
+        
+                    <table>
+                        <tr>
+                            <td><span class="math">512&middot;1</span></td>
+                            <td><span class="math">64&middot;5</span></td>
+                            <td><span class="math">8&middot;2</span></td>
+                            <td><span class="math">1&middot;3</span></td>
+                        </tr>
+                    </table>
+        
+                    <p class="center">Får vi:</p>
+        
+                    <table>
+                        <tr>
+                            <td><span class="math">512</span></td>
+                            <td><span class="math">320</span></td>
+                            <td><span class="math">16</span></td>
+                            <td><span class="math">3</span></td>
+                        </tr>
+                    </table>
+                    
+                    <p class="center">Lagt sammen blir <span class="math">851</span> i <span class="blue">base-10</span>.</p>
+                </section>
+        
                 <p>Hvis vi vil gjøre om et tall fra <span class="blue">base-10</span> til <span class="blue">base-8</span>, må vi bruke en annen metode, fordi vi ikke greier å regne i <span class="blue">base-8</span>.</p>
                 <p>Vi må først starte med et siffer intuitivt til venstre, avhengig av hvor stort tallet er. Vi kan begynne med det fjerde sifferet. Husk at man må opphøye grunntallet med (1 minus siffertall):</p>
     
-                <ol>
-                    <li><span class="math">8^3 = 512 > 342</span> , så det finnes ingen tall som ligger i fjerde siffer.</li>
-                    <li><span class="math">64 < 342</span> , så det finnes tall som ligger i tredje siffer.</li>
-                    <li><span class="math">342/62 = 5.34</span> ; Tredje siffer er lik <span class="math">5</span>.</li>
-                    <li><span class="math">342 - 5&middot;8^2 = 22</span></li>
-                    <li><span class="math">22/16 = 2.75</span> ; Andre siffer er lik <span class="math">2</span>.</li>
-                    <li><span class="math">22 - 2&middot;8^1 = 6</span></li>
-                    <li><span class="math">6/1 = 6</span> ; Første siffer er lik <span class="math">6</span>.</li>
-                </ol>
-    
-                <p>Tallet blir da <span class="math">526<sub>8</sub></span></p>
+                <section class="example">
+                    <ol>
+                        <li><span class="math">8^3 = 512 > 342</span> , så det finnes ingen tall som ligger i fjerde siffer.</li>
+                        <li><span class="math">64 < 342</span> , så det finnes tall som ligger i tredje siffer.</li>
+                        <li><span class="math">342/62 = 5.34</span> ; Tredje siffer er lik <span class="math">5</span>.</li>
+                        <li><span class="math">342 - 5&middot;8^2 = 22</span></li>
+                        <li><span class="math">22/16 = 2.75</span> ; Andre siffer er lik <span class="math">2</span>.</li>
+                        <li><span class="math">22 - 2&middot;8^1 = 6</span></li>
+                        <li><span class="math">6/1 = 6</span> ; Første siffer er lik <span class="math">6</span>.</li>
+                    </ol>
+                    
+                    <p>Tallet blir da <span class="math">526<sub>8</sub></span></p>
+                </section>
+                
+                <p>Samme tall i en mindre base vil alltid være mindre enn samme tallet i en høyere base.</p>
 
                 <hr>
 
-                <p>Samme tall i en mindre base vil alltid være mindre enn samme tallet i en høyere base.</p>
+                <p>Det er veldig enkelt å gjøre om <span class="blue">16-bit</span>-tall (hexadesimal) til binær, fordi <span class="math">2</span> kan bli opphøyd i <span class="math">4</span> for å gi <span class="math">16</span>.</p>
+                <p><span class="math">A78_16 = 1010 0111 1000<sub>2</sub></span></p>
+                <p>Fordi:</p>
+
+                <section class="example">
+                    <table>
+                        <tr>
+                            <td><span class="blue">base-16</span></td>
+                            <td><span class="math">0</span></td>
+                            <td><span class="math">1</span></td>
+                            <td><span class="math">2</span></td>
+                            <td><span class="math">3</span></td>
+                            <td><span class="math">4</span></td>
+                            <td><span class="math">5</span></td>
+                            <td><span class="math">6</span></td>
+                            <td><span class="math">7</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="blue">base-2</span></td>
+                            <td><span class="math">0000</span></td>
+                            <td><span class="math">0001</span></td>
+                            <td><span class="math">0010</span></td>
+                            <td><span class="math">0011</span></td>
+                            <td><span class="math">0100</span></td>
+                            <td><span class="math">0101</span></td>
+                            <td><span class="math">0110</span></td>
+                            <td><span class="math">0111</span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><span class="blue">base-16</span></td>
+                            <td><span class="math">8</span></td>
+                            <td><span class="math">9</span></td>
+                            <td><span class="math">A</span></td>
+                            <td><span class="math">B</span></td>
+                            <td><span class="math">C</span></td>
+                            <td><span class="math">D</span></td>
+                            <td><span class="math">E</span></td>
+                            <td><span class="math">F</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="blue">base-2</span></td>
+                            <td><span class="math">1000</span></td>
+                            <td><span class="math">1001</span></td>
+                            <td><span class="math">1010</span></td>
+                            <td><span class="math">1011</span></td>
+                            <td><span class="math">1100</span></td>
+                            <td><span class="math">1101</span></td>
+                            <td><span class="math">1110</span></td>
+                            <td><span class="math">1111</span></td>
+                        </tr>
+                    </table>
+
+                    <p>Når man legger til et siffer hos tallet i <span class="blue">base-16</span> på høyre side, vil man legge til <span class="math">4</span> tall i tallet i <span class="blue">base-2</span> på høyre side.</p>
+                    <p>Samme skjer med tall i <span class="blue">base-4</span>, fordi <span class="math">4</span> kan bli opphøyd i <span class="math">2</span> for å gi <span class="math">16</span>. Det betyr at når man legger til et siffer i <span class="blue">base-16</span>, legger man til <span class="math">2</span> sifre i <span class="blue">base-4</span>.</p>
+                </section>
+
+                <h3>Fargesystemer</h3>
+                <p>Mange programmer tar i bruk <span class="blue">hexadesimal-tall</span> for å representere farger. Dette er fordi skjermer pleier å ha <span class="math">256</span> ulike lysstyrker på hver pixel <span class="math">(0-255)</span>, på hver fargekanal, og et tosifret hexadesimaltall kan gi tall mellom <span class="math">0</span> og <span class="math">255<sub>10</sub></span>.</p>
+                <p>Eksempel:</p>
+                <section class="example">
+                    <p class="center"><span class="math">88AABB</span>:</p>
+
+                    <table>
+                        <tr>
+                            <td>Fargekanal</td>
+                            <td><span class="blue">16-bit</span></td>
+                            <td><span class="blue">10-bit</span></td>
+                        </tr>
+                        <tr>
+                            <td>Rødt</td>
+                            <td><span class="math">88</span></td>
+                            <td><span class="math">136</span></td>
+                        </tr>
+                        <tr>
+                            <td>Grønt</td>
+                            <td><span class="math">AA</span></td>
+                            <td><span class="math">170</span></td>
+                        </tr>
+                        <tr>
+                            <td>Blått</td>
+                            <td><span class="math">BB</span></td>
+                            <td><span class="math">187</span></td>
+                        </tr>
+                    </table>
+
+                    <section style="display: flex; align-items: center;">
+                        <p>Fargen vil se slik ut:</p>
+                        <section class="color" style="background-color: #88AABB;"><span>88AABB</span></section>
+                    </section>
+                </section>
+                
+                <p>Begge sifrene i hvert kanal er like, kan man forkorte det slik:</p>
+                <p><span class="math">88AABB => 8AB</span></p>
                 
             </section>
         </section>
