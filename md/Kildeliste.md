@@ -1,2 +1,5 @@
 - https://www.pexels.com/photo/high-performance-ram-modules-on-wooden-surface-34006659/
 - https://www.howtogeek.com/697659/what-is-ram-everything-you-need-to-know/
+- https://www.backblaze.com/blog/whats-diff-ram-vs-storage/
+- https://en.wikipedia.org/wiki/Capacitor
+- https://en.wikipedia.org/wiki/Transistor

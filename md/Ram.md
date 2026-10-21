@@ -1,11 +1,35 @@
 ### Hva er RAM?
 
-Ram kan bli sett på som PC-ens korttidshukommelse, mens harddisken/SSD-en er langtidshukommelsen.
+RAM står for Random Access Memory. Den er maskinens korttidshukommelse, i motsetning til harddisken/SSD-en, som er langtidshukommelsen.
 
-Vi trenger RAM i tillegg til disken fordi det er mye kjappere når man skal aktivt oppdatere / jobbe med en fil. Når man åpner en videofil for eksempel, vil deler av filen bli lagret i RAM. Dette gjør at man videoen spilles uten hakk, fordi RAM-en aktivt mater data fra filen til videospilleren. Hvis bare SSD-en hadde gjort det, så ville det tatt masse tid for hvert bilde å bli matet inn i spilleren mange ganger i sekundet.
+Den inneholder aktive filer, åpne programmer og systemdata som åpne nettsider og videoer som kjører. Dette gjør at man kan bruke disse tingene uten at det føles sakte. Hvordan og hvorfor?
 
-Man kan vel se på RAM som en slags kø i denne konteksten. Med kø er det allerede bestemt på forhånd hva som kommer først; uten kø måtte man ha valgt hvilken person som kommer først, hver eneste gang det er neste persons tur. Alt i alt, bruker systemet RAM for å få tak i filer og programmer som er i bruk akkurat nå.
+RAM inneholder transistorer og kondensatorer, som mister data når den mister tilgang til kontinuerlig strøm.
 
-### RAM-former
+### Hvorfor ikke bruke SSD-en for alt?
 
-Den vanligste formen av RAM er DDR4, 
+RAM er tusenvis av ganger raskere enn selv den raskeste SSD-en. Når maskinen kjører et program eller spill, må prosessoren lese millionvis av data hvert sekund. Hvis den leste dette av SSD-en hele tiden, ville alt tatt mye lenger tid enn hvis den leste av RAM.
+
+### Former
+
+- **DIMM**: Store RAM-brikker som er brukt i stasjonære PCer og servere.
+- **SODIMM**: Mindre RAM-brikker som er brukt i laptoper og kompakte systemer.
+- **Loddet RAM**: Noen laptoper har RAM som er loddet på hovedkortet, noe som gjør det umulig å oppgradere den.
+
+### DDR-standarden
+
+RAM bruker Double Data Rate (DDR) -teknologi som dobler båndbredde. Den vanligste formen av RAM i dag er DDR4. Fysiske spor på brikken har hull slik at man ikke setter inn feil type RAM på hovedkortet, for eksempel kan man ikke sette inn en DDR3-brikke i et hovedkort som støtter DDR4.
+
+### Egenskaper
+
+RAM kommer i ulike hastigheter, for eksempel fra rundt 2400 til 3200 MHz. De kommer også med ulike kapasiteter, som 4GB, 8GB og 16GB. De fleste PC-er kommer med 8GB og 16GB.
+
+Maskiner funker best med to brikker av samme sort og produsent, slik at den ene ikke blir holdt tilbake av den andre. Det er også nødvendig for å ha stabilitet i systemet.
+
+### Litt om transistorer og kondensatorer
+
+**Transistorer** blir brukt i nesten alle elektriske komponenter. De er bittesmå elektroniske brytere som styrer hvor elektrisiteten går. Den kan skru et signal av og på, eller forsterke den. Det er dette som gjør at de kan representere 0 og 1. Når disse transistorene er mange nok, kan de utføre logiske operasjoner eller representere tall og masse annet. De kan lage "logic gates", og blir derfor brukt for å prosessere data og utføre logikk.
+
+**Kondensatorer** er små komponenter som er laget for å holde og slippe elektrisk energi. Disse kan også representere også 0 og 1. De mister energien kjapt, så de må bli fylt opp igjen nesten umiddelbart. De blir brukt til å stabilisere strøm og for å holde data i RAM.
+
+Transistorer og kondensatorer, sammen med andre elektriske komponenter, jobber sammen for å danne fullstendige elektroniske kretser.

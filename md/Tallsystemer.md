@@ -91,6 +91,6 @@ Blått = BB_16 = 187_10
 
 Fargen vil se slik ut:
 
-Begge sifrene i hvert kanal er like, kan man forkorte det slik:
+Når begge sifrene i hvert kanal er like, kan man forkorte det slik:
 
 88AABB = 8AB

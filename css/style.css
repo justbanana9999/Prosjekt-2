@@ -56,11 +56,30 @@ hr {
 
 a {
     /* text-decoration: none; */
-    color: #FCF0DA;
+    color: #405ace;
+}
+
+.content:nth-child(even) a {
+    color: #7d95ff;
 }
 
 a:hover {
-    color: rgb(193, 76, 76);
+    color: #c14c4c !important;
+}
+
+.content a:focus {
+    outline: 3px dotted #FCF0DA;
+    /* outline-offset: 2px; */
+}
+
+nav a:focus {
+    outline: 3px dotted #ffffff;
+    outline-offset: -8px;
+}
+
+nav a:hover:focus {
+    outline: 3px dotted #ffffff;
+    outline-offset: -8px;
 }
 
 .content:nth-child(even) td, .group, hr {
@@ -109,23 +128,22 @@ html {
     scroll-padding-top: 130px;
 }
 
-table {
-    /* box-shadow: 0px 0px 30px rgba(105, 90, 71, 0.4); */
-    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.2);
-}
-
 .content:nth-child(even) table {
     /* box-shadow: 0px 0px 50px rgba(255, 219, 178, 0.2); */
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
 }
 
 .math {
-    color: rgb(193, 76, 76);
+    color: #d32b2b;
     font-family: 'Jetbrains mono';
 }
 
+.content:nth-child(even) .math {
+    color: #c14c4c;
+}
+
 .blue {
-    color: rgb(76, 125, 193);
+    color: #4c7dc1;
 }
 
 .wrapper {
@@ -138,6 +156,7 @@ table {
 img {
     border-radius: 20px;
     width: 400px;
+    max-width: 70vw;
     height: fit-content;
     /* For at alt-tekst skal se fint ut */
     font-family: 'Google Sans';
@@ -163,9 +182,11 @@ Posted by Real Dreams, modified by community. See post 'Timeline' for change his
 Retrieved 2026-10-11, License - CC BY-SA 4.0
 */
 
-ul { list-style-type: square }
+ul { list-style-type: square; }
 
 ul > li { margin: 2rem 0; }
+
+ul.center { list-style-type: none; }
 
 /* ul { list-style-type: "> "; } */
 
@@ -198,7 +219,7 @@ ol { list-style-type: upper-roman; }
 
     text-align: center;
     line-height: 100%;
-    font-size: 1rem;
+    font-size: 2cqw;
 
     display: flex;
     justify-content: center;
@@ -213,7 +234,7 @@ ol { list-style-type: upper-roman; }
     width: 11rem;
     height: 3rem;
 
-    font-size: 2rem;
+    font-size: 3cqw;
 }
 
 .content:nth-child(even) .color span{
@@ -224,4 +245,12 @@ ol { list-style-type: upper-roman; }
 .content:nth-child(even) .color:hover span{
     opacity: 1;
     
+}
+
+b {
+    color: #6f47b9;
+}
+
+.content:nth-child(even) b {
+    color: #b58dff;
 }

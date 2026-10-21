@@ -11,7 +11,7 @@ nav {
 nav a{
     text-decoration: none;
     padding: 1.5rem;
-    color: #F2C46A;
+    color: #fac760;
     font-size: 20px;
 
     text-align: center;
@@ -23,7 +23,7 @@ nav a{
 
     /* border: 2px solid black; */
 
-    transition: 0.3s ease;
+    /* transition: 0.3s ease; */
     
     z-index: 3;
 }
